@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        hr.rounded {
+      border-top: 8px solid #bbb;
+      border-radius: 9px;
+    }
+    </style>
+</head>
+<body bgcolor="#195e83">
+
+
+<header class="text-gray-4000 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">Sentiment Analysis</span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+
+        <a href= "https://www.github.com/DivyanshuGaur"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" width="30" height="30" title="git" alt="hub"></a>
+
+        &nbsp; &nbsp;<a href="https://www.linkedin.com/in/divyanshu-gaur-a52138174/"><img src="https://img.icons8.com/color/2x/linkedin.png" width="30" height="30" title="linked" alt="in"></a>
+
+    </nav>
+
+  </div>
+</header>
+
+
+<hr class="solid">
+
+
+
+<section class="text-gray-700 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <img class="object-cover object-center rounded" alt="hero" src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/35/2015/06/smilies1.jpg">
+    </div>
+    <form action="/analyse/" method="post">
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+     <textarea name="data" class="bg-white rounded border border-gray-100 focus:outline-none  h-20 focus:border-indigo-500 text-base px-0 py-0 mb-2"
+             cols="100">
+      </textarea>
+
+      <div class="flex justify-center">
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Analyse</button>
+      </div>
+    </div>
+        </form>
+  </div>
+</section>
+
+
+
+</body>
+</html>

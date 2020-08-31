@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+     /*dark background to support form theme*/
+
+
+/*sass variables used*/
+$full:50%;
+$auto:0 auto;
+$align:center;
+
+@mixin disable{
+  outline:none;
+  border:none;
+}
+
+@mixin easeme{
+  -webkit-transition:1s ease;
+  -moz-transition:1s ease;
+  -o-transition:1s ease;
+  -ms-transition:1s ease;
+  transition:1s ease;
+}
+
+/*site container*/
+.wrapper{
+  width:190px;
+  margin:$center;
+}
+
+.wrapper1{
+  width:600px;
+  margin:$center;
+}
+
+h1{
+  text-align:$align;
+  padding:30px 0px 0px 0px;
+  font:45px Oswald;
+  color:#FFF;
+  text-transform:uppercase;
+  text-shadow:#000 0px 1px 5px;
+  margin:0px;
+}
+
+p{
+  font:13px Open Sans;
+  color:#6E6E6E;
+  text-shadow:#000 0px 1px 5px;
+  margin-bottom:30px;
+}
+
+.form{
+  width:$full;
+}
+
+
+input[type="submit"]{
+  width:100%;
+  padding:15px;
+  border-radius:5px;
+  @include disable;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#28D2DE), to(#1A878F));
+  background-image: -webkit-linear-gradient(#28D2DE 0%, #1A878F 100%);
+  background-image: -moz-linear-gradient(#28D2DE 0%, #1A878F 100%);
+  background-image: -o-linear-gradient(#28D2DE 0%, #1A878F 100%);
+  background-image: linear-gradient(#28D2DE 0%, #1A878F 100%);
+  font:14px Oswald;
+  color:#FFF;
+  text-transform:uppercase;
+  text-shadow:#000 0px 1px 5px;
+  border:1px solid #000;
+  opacity:0.7;
+	-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+	box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+  border-top:1px solid rgba(255,255,255,0.8)!important;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255,255,255,0.2)));
+}
+
+input:focus{
+  box-shadow:inset 4px 6px 10px -4px rgba(0,0,0,0.7), 0 1px 1px -1px rgba(255,255,255,0.3);
+  background:rgba(0,0,0,0.3);
+  @include easeme;
+}
+
+input[type="submit"]:hover{
+  opacity:1;
+  cursor:pointer;
+}
+
+
+
+
+
+    </style>
+
+</head>
+<body bgcolor="#195e83">
+
+
+
+<header class="text-gray-4000 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+
+        <a href= "https://www.github.com/DivyanshuGaur"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" width="30" height="30" title="git" alt="hub"></a>
+
+        &nbsp; &nbsp;<a href="https://www.github.com/DivyanshuGaur"><img src="https://img.icons8.com/color/2x/linkedin.png" width="30" height="30" title="linked" alt="in"></a>
+
+    </nav>
+
+  </div>
+</header>
+
+
+<hr class="solid">
+       <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+
+<div class="wrapper1">
+                           <h1>Sentiment Analysis</h1>
+
+</div>
+
+<div class="wrapper">
+
+
+  <form class="form" method="post" action="/analyse/">
+    <textarea type="text" name="data" rows="15" cols="60" class="name" placeholder="...."></textarea>
+    <input type="submit" ALIGN="CENTER" class="submit"  value="Analyse">
+  </form>
+</div>
+
+<div align="center">
+    
+
+</div>
+
+</body>
+</html>
